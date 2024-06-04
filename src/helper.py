@@ -1,11 +1,11 @@
 from langchain.prompts import PromptTemplate 
 from langchain.chains import RetrievalQA 
-from langchain.embeddings import HuggingFaceEmbeddings 
-from langchain.vectorstores import Pinecone 
-import pinecone 
-from langchain.document_loaders import PyPDFLoader, DirectoryLoader 
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Pinecone
+from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader
+# from langchain.document_loaders import PyPDFLoader, DirectoryLoader 
 from langchain.text_splitter import RecursiveCharacterTextSplitter 
-from langchain.llms import CTransformers 
+from langchain_community.llms import CTransformers
 from tqdm.autonotebook import tqdm
 
 
